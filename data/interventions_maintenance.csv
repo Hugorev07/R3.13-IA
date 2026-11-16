@@ -1,0 +1,92 @@
+ticket_id,machine_id,date_ouverture,date_cloture,type_intervention,cause,action,priorite,duree_arret_min,cout_eur,technicien,statut,donnees_synthetiques
+TK-0001,M-05,2025-01-06T00:05:00,2025-01-06T01:37:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,92,392.19,T-02,clos,True
+TK-0002,M-01,2025-01-06T00:10:00,2025-01-06T00:55:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,45,187.13,T-04,clos,True
+TK-0003,M-03,2025-01-06T00:10:00,2025-01-06T03:38:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,208,910.5,T-02,clos,True
+TK-0004,M-06,2025-01-06T00:10:00,2025-01-06T01:55:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,105,389.28,T-02,clos,True
+TK-0005,M-02,2025-01-06T00:15:00,2025-01-06T01:31:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,76,292.26,T-02,clos,True
+TK-0006,M-04,2025-01-06T00:15:00,2025-01-06T01:04:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,49,509.97,T-03,clos,True
+TK-0007,M-02,2025-01-06T02:15:00,2025-01-06T03:17:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,62,229.4,T-02,clos,True
+TK-0008,M-03,2025-01-06T03:10:00,2025-01-06T08:16:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,306,1272.45,T-03,clos,True
+TK-0009,M-04,2025-01-06T03:10:00,2025-01-06T04:01:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,51,548.24,T-01,clos,True
+TK-0010,M-05,2025-01-06T03:10:00,2025-01-06T07:01:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,231,595.15,T-04,clos,True
+TK-0011,M-01,2025-01-06T03:20:00,2025-01-06T04:07:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,47,108.74,T-03,clos,True
+TK-0012,M-02,2025-01-06T03:20:00,2025-01-06T04:00:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,40,118.54,T-04,clos,True
+TK-0013,M-03,2025-01-06T03:20:00,2025-01-06T04:18:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,58,124.12,T-02,clos,True
+TK-0014,M-04,2025-01-06T03:20:00,2025-01-06T04:08:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,48,127.67,T-01,clos,True
+TK-0015,M-05,2025-01-06T03:20:00,2025-01-06T04:02:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,42,118.74,T-01,clos,True
+TK-0016,M-06,2025-01-06T03:20:00,2025-01-06T04:57:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,97,573.9,T-04,clos,True
+TK-0017,M-06,2025-01-06T03:20:00,2025-01-06T03:52:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,32,107.74,T-04,clos,True
+TK-0018,M-04,2025-01-06T04:45:00,2025-01-06T08:17:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,212,576.41,T-02,clos,True
+TK-0019,M-06,2025-01-06T04:50:00,2025-01-06T06:14:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,84,538.01,T-03,clos,True
+TK-0020,M-02,2025-01-06T06:15:00,2025-01-06T07:21:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,66,266.2,T-02,clos,True
+TK-0021,M-03,2025-01-06T06:20:00,2025-01-06T09:41:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,201,805.65,T-01,clos,True
+TK-0022,M-05,2025-01-06T06:20:00,2025-01-06T07:32:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,72,245.48,T-04,clos,True
+TK-0023,M-04,2025-01-06T06:25:00,2025-01-06T08:02:00,corrective,surintensité moteur,Vérification bobinage et alimentation,haute,97,375.34,T-04,clos,True
+TK-0024,M-06,2025-01-06T06:25:00,2025-01-06T09:21:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,176,659.71,T-01,clos,True
+TK-0025,M-01,2025-01-06T06:40:00,2025-01-06T07:26:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,46,107.91,T-03,clos,True
+TK-0026,M-02,2025-01-06T06:40:00,2025-01-06T07:08:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,28,97.21,T-03,clos,True
+TK-0027,M-03,2025-01-06T06:40:00,2025-01-06T07:32:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,52,115.8,T-04,clos,True
+TK-0028,M-04,2025-01-06T06:40:00,2025-01-06T07:01:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,21,88.9,T-02,clos,True
+TK-0029,M-05,2025-01-06T06:40:00,2025-01-06T07:14:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,34,99.63,T-03,clos,True
+TK-0030,M-06,2025-01-06T06:40:00,2025-01-06T07:11:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,31,95.72,T-04,clos,True
+TK-0031,M-06,2025-01-06T07:40:00,2025-01-06T09:39:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,119,406.01,T-04,clos,True
+TK-0032,M-03,2025-01-06T09:20:00,2025-01-06T10:11:00,corrective,surintensité moteur,Vérification bobinage et alimentation,haute,51,433.67,T-04,clos,True
+TK-0033,M-04,2025-01-06T09:20:00,2025-01-06T12:42:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,202,935.85,T-01,clos,True
+TK-0034,M-05,2025-01-06T09:20:00,2025-01-06T11:14:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,114,589.94,T-03,clos,True
+TK-0035,M-06,2025-01-06T09:20:00,2025-01-06T10:45:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,85,437.62,T-03,clos,True
+TK-0036,M-01,2025-01-06T09:25:00,2025-01-06T10:18:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,53,159.82,T-01,clos,True
+TK-0037,M-01,2025-01-06T10:00:00,2025-01-06T10:32:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,32,105.61,T-03,clos,True
+TK-0038,M-02,2025-01-06T10:00:00,2025-01-06T10:34:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,34,98.79,T-04,clos,True
+TK-0039,M-03,2025-01-06T10:00:00,2025-01-06T10:44:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,44,121.69,T-01,clos,True
+TK-0040,M-04,2025-01-06T10:00:00,2025-01-06T10:55:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,55,117.31,T-01,clos,True
+TK-0041,M-05,2025-01-06T10:00:00,2025-01-06T10:32:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,32,95.91,T-01,clos,True
+TK-0042,M-06,2025-01-06T10:00:00,2025-01-06T10:54:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,54,121.09,T-03,clos,True
+TK-0043,M-06,2025-01-06T11:00:00,2025-01-06T13:28:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,148,806.05,T-01,clos,True
+TK-0044,M-05,2025-01-06T11:20:00,2025-01-06T13:22:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,moyenne,122,372.89,T-03,clos,True
+TK-0045,M-04,2025-01-06T12:25:00,2025-01-06T15:09:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,164,418.3,T-04,clos,True
+TK-0046,M-05,2025-01-06T12:25:00,2025-01-06T14:08:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,103,334.65,T-03,clos,True
+TK-0047,M-01,2025-01-06T12:30:00,2025-01-06T15:01:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,151,440.85,T-03,clos,True
+TK-0048,M-06,2025-01-06T12:35:00,2025-01-06T14:37:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,122,510.09,T-02,clos,True
+TK-0049,M-01,2025-01-06T13:20:00,2025-01-06T13:49:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,29,90.2,T-02,clos,True
+TK-0050,M-02,2025-01-06T13:20:00,2025-01-06T14:19:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,59,139.05,T-03,clos,True
+TK-0051,M-03,2025-01-06T13:20:00,2025-01-06T13:46:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,26,87.19,T-04,clos,True
+TK-0052,M-04,2025-01-06T13:20:00,2025-01-06T13:48:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,28,94.09,T-04,clos,True
+TK-0053,M-05,2025-01-06T13:20:00,2025-01-06T14:08:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,48,129.25,T-01,clos,True
+TK-0054,M-06,2025-01-06T13:20:00,2025-01-06T14:15:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,55,115.58,T-04,clos,True
+TK-0055,M-06,2025-01-06T13:45:00,2025-01-06T17:22:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,217,597.69,T-02,clos,True
+TK-0056,M-01,2025-01-06T15:30:00,2025-01-06T17:25:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,115,274.26,T-04,clos,True
+TK-0057,M-03,2025-01-06T15:30:00,2025-01-06T20:48:00,corrective,surintensité moteur,Vérification bobinage et alimentation,haute,318,908.6,T-02,clos,True
+TK-0058,M-06,2025-01-06T15:30:00,2025-01-06T18:29:00,corrective,surintensité moteur,Vérification bobinage et alimentation,haute,179,671.65,T-02,clos,True
+TK-0059,M-04,2025-01-06T15:40:00,2025-01-06T17:42:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,122,633.85,T-03,clos,True
+TK-0060,M-05,2025-01-06T16:10:00,2025-01-06T16:46:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,36,166.65,T-02,clos,True
+TK-0061,M-01,2025-01-06T16:40:00,2025-01-06T17:06:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,26,91.52,T-02,clos,True
+TK-0062,M-02,2025-01-06T16:40:00,2025-01-06T17:11:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,31,102.27,T-03,clos,True
+TK-0063,M-03,2025-01-06T16:40:00,2025-01-06T17:25:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,45,115.78,T-02,clos,True
+TK-0064,M-04,2025-01-06T16:40:00,2025-01-06T17:11:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,31,92.53,T-04,clos,True
+TK-0065,M-05,2025-01-06T16:40:00,2025-01-06T17:07:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,27,87.5,T-03,clos,True
+TK-0066,M-06,2025-01-06T16:40:00,2025-01-06T17:39:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,59,143.84,T-04,clos,True
+TK-0067,M-06,2025-01-06T16:50:00,2025-01-06T20:51:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,241,639.72,T-04,clos,True
+TK-0068,M-06,2025-01-06T18:10:00,2025-01-06T21:03:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,173,821.58,T-03,clos,True
+TK-0069,M-03,2025-01-06T18:35:00,2025-01-06T21:36:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,181,457.04,T-02,clos,True
+TK-0070,M-02,2025-01-06T18:40:00,2025-01-07T01:11:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,391,1381.67,T-02,clos,True
+TK-0071,M-04,2025-01-06T18:40:00,2025-01-06T19:40:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,60,623.06,T-02,clos,True
+TK-0072,M-05,2025-01-06T18:40:00,2025-01-06T19:43:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,63,508.22,T-03,clos,True
+TK-0073,M-01,2025-01-06T18:45:00,2025-01-06T21:44:00,corrective,défaut qualité sans alarme,Inspection visuelle et réglages,basse,179,380.5,T-03,clos,True
+TK-0074,M-01,2025-01-06T20:00:00,2025-01-06T20:45:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,45,108.41,T-03,clos,True
+TK-0075,M-02,2025-01-06T20:00:00,2025-01-06T20:50:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,50,119.07,T-02,clos,True
+TK-0076,M-03,2025-01-06T20:00:00,2025-01-06T20:41:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,41,115.23,T-04,clos,True
+TK-0077,M-04,2025-01-06T20:00:00,2025-01-06T20:32:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,32,106.57,T-01,clos,True
+TK-0078,M-05,2025-01-06T20:00:00,2025-01-06T20:22:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,22,82.47,T-03,clos,True
+TK-0079,M-06,2025-01-06T20:00:00,2025-01-06T20:36:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,36,110.89,T-01,clos,True
+TK-0080,M-06,2025-01-06T20:40:00,2025-01-06T21:58:00,corrective,surintensité moteur,Vérification bobinage et alimentation,haute,78,507.54,T-01,clos,True
+TK-0081,M-04,2025-01-06T21:40:00,2025-01-06T23:54:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,134,528.7,T-01,clos,True
+TK-0082,M-05,2025-01-06T21:40:00,2025-01-07T00:21:00,corrective,surchauffe,Contrôle refroidissement / remplacement ventilateur,haute,161,713.76,T-03,clos,True
+TK-0083,M-06,2025-01-06T21:40:00,2025-01-06T22:52:00,corrective,baisse de cadence,Réglage mécanisme d'entraînement,haute,72,360.47,T-04,clos,True
+TK-0084,M-01,2025-01-06T21:50:00,2025-01-06T23:16:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,moyenne,86,221.04,T-02,clos,True
+TK-0085,M-01,2025-01-06T23:20:00,2025-01-07T00:05:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,45,123.97,T-01,clos,True
+TK-0086,M-02,2025-01-06T23:20:00,2025-01-07T00:17:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,57,144.63,T-04,clos,True
+TK-0087,M-03,2025-01-06T23:20:00,2025-01-07T00:13:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,53,129.88,T-04,clos,True
+TK-0088,M-04,2025-01-06T23:20:00,2025-01-06T23:54:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,34,103.14,T-01,clos,True
+TK-0089,M-05,2025-01-06T23:20:00,2025-01-06T23:59:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,39,113.97,T-02,clos,True
+TK-0090,M-06,2025-01-06T23:20:00,2025-01-07T00:16:00,preventive,maintenance planifiée,"Graissage, contrôle serrage et nettoyage",basse,56,140.15,T-04,clos,True
+TK-0091,M-06,2025-01-06T23:50:00,2025-01-07T00:54:00,corrective,vibrations excessives,Rééquilibrage / remplacement roulement,haute,64,500.34,T-04,clos,True
