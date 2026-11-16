@@ -15,7 +15,8 @@ L'objectif global est de developper et valider une chaine complete d'analyse de 
 │   └── interventions_maintenance.csv # Registre synthetique des tickets d'intervention
 ├── notebooks/
 │   ├── TP1_preparation_telemetrie.ipynb # TP 1 : Preparation et exploration de la telemetrie
-│   └── TP2_segmentation_kmeans.ipynb    # TP 2 : Segmentation non supervisee par K-means
+│   ├── TP2_segmentation_kmeans.ipynb    # TP 2 : Segmentation non supervisee par K-means
+│   └── TP3_cah_dbscan.ipynb             # TP 3 : Familles de machines, CAH et DBSCAN
 ├── src/
 │   ├── __init__.py
 │   └── data_loader.py                # Fonctions utilitaires reutilisables (chargement des donnees)
@@ -65,7 +66,7 @@ python generateur_atelier.py
 | :--- | :--- | :---: | :--- |
 | **TP 1** | **Preparation et exploration de la telemetrie capteurs** | **Termine** | `notebooks/TP1_preparation_telemetrie.ipynb` |
 | **TP 2** | **Segmentation non supervisee des regimes de fonctionnement (K-means)** | **Termine** | `notebooks/TP2_segmentation_kmeans.ipynb` |
-| **TP 3** | Detection d'anomalies statistiques et residus thermomecaniques | A venir | `notebooks/TP3_detection_anomalies.ipynb` |
+| **TP 3** | **Familles de machines et partitionnement avance (CAH & DBSCAN)** | **Termine** | `notebooks/TP3_cah_dbscan.ipynb` |
 | **TP 4** | Modelisation supervisee du risque de panne et classification predictive | A venir | `notebooks/TP4_classification_defauts.ipynb` |
 | **TP 5** | Estimation de la duree de vie residuelle (RUL - Remaining Useful Life) | A venir | `notebooks/TP5_estimation_rul.ipynb` |
 | **TP 6** | Fusion de donnees : croisement telemetrie et tickets d'intervention GMAO | A venir | `notebooks/TP6_fusion_gmao.ipynb` |
@@ -91,3 +92,12 @@ python generateur_atelier.py
 - Profilage metier ordonne : Tri strict des 4 clusters par temperature mediane croissante (0 a 3), calcul des medianes physiques dans leurs unites d'origine, taux de defauts a posteriori et croisement avec les machines (M-01 a M-06).
 - Nommage prudent et actions de maintenance : Formalisation des 4 regimes (ralenti, nominal stabilise, forte charge, regime severe/incident) et precaunisations operationnelles de maintenance.
 - Effet de l'echelle : Entrainement sur donnees brutes non standardisees (ARI ~ 0.44), demontrant que la temperature et la cadence masquent le signal vibratoire critique en l'absence de centrage-reduction.
+
+### TP 3 : Familles de machines et partitionnement avance (CAH & DBSCAN)
+- Familles de machines par CAH (Ward) : Hierarchie sur profils moyens standardises, dendrogramme et partition en 3 familles distinctes ({M-01, M-02, M-05} faible sollicitation, {M-03, M-04} charge elevee, {M-06} etat critique/usure severe).
+- Comparaison des criteres de liaison : Mise en evidence de l'effet de chaine du saut minimum (single) sur signaux continus face a l'equilibre de la variance minimale de Ward.
+- Lecture du dendrogramme : Comparaison de la coupure mathematique a 2 groupes vs le besoin operationnel de maintenance justifiant 4 regimes.
+- Parametrage k-distance pour DBSCAN : Determination empirique de epsilon via le coude de la 5-distance (0.50 a 0.60) et etude de sensibilite de epsilon sur les effectifs.
+- Analyse metier du bruit DBSCAN : Preuve de la concentration majeure des anomalies dans le bruit (taux de defauts de 42.0 % dans le bruit vs 7.9 % hors bruit, sur-representation de M-06 et des incidents roulement).
+- Benchmark sur formes synthetiques : Mise a l'epreuve des 4 methodes (K-means, CAH Ward, CAH Single, DBSCAN) sur geometries complexes non convexes (blobs, lunes, cercles concentriques).
+- Recommandations operationnelles : Synthese concise a destination des equipes de maintenance integrant les roles complementaires de la CAH et de DBSCAN.
