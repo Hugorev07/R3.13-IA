@@ -17,7 +17,8 @@ L'objectif global est de developper et valider une chaine complete d'analyse de 
 │   ├── TP1_preparation_telemetrie.ipynb # TP 1 : Preparation et exploration de la telemetrie
 │   ├── TP2_segmentation_kmeans.ipynb    # TP 2 : Segmentation non supervisee par K-means
 │   ├── TP3_cah_dbscan.ipynb             # TP 3 : Familles de machines, CAH et DBSCAN
-│   └── TP4_evaluation_stabilite.ipynb   # TP 4 : Evaluation, profilage et stabilite des clusters
+│   ├── TP4_evaluation_stabilite.ipynb   # TP 4 : Evaluation, profilage et stabilite des clusters
+│   └── TP5_reduction_dimension.ipynb    # TP 5 : Reduction de dimension (ACP, t-SNE, UMAP)
 ├── src/
 │   ├── __init__.py
 │   └── data_loader.py                # Fonctions utilitaires reutilisables (chargement des donnees)
@@ -69,7 +70,7 @@ python generateur_atelier.py
 | **TP 2** | **Segmentation non supervisee des regimes de fonctionnement (K-means)** | **Termine** | `notebooks/TP2_segmentation_kmeans.ipynb` |
 | **TP 3** | **Familles de machines et partitionnement avance (CAH & DBSCAN)** | **Termine** | `notebooks/TP3_cah_dbscan.ipynb` |
 | **TP 4** | **Evaluation, profilage et stabilite des clusters** | **Termine** | `notebooks/TP4_evaluation_stabilite.ipynb` |
-| **TP 5** | Estimation de la duree de vie residuelle (RUL - Remaining Useful Life) | A venir | `notebooks/TP5_estimation_rul.ipynb` |
+| **TP 5** | **Reduction de dimension (ACP, t-SNE, UMAP)** | **Termine** | `notebooks/TP5_reduction_dimension.ipynb` |
 | **TP 6** | Fusion de donnees : croisement telemetrie et tickets d'intervention GMAO | A venir | `notebooks/TP6_fusion_gmao.ipynb` |
 | **TP 7** | Deploiement d'un tableau de bord de maintenance predictive | A venir | `notebooks/TP7_dashboard_monitoring.ipynb` |
 
@@ -110,3 +111,11 @@ python generateur_atelier.py
 - Stabilite temporelle : Decoupage chronologique 50/50 revelant une derive thermique lente et la concentration des pannes en deuxieme moitie de journee (ARI = 0.784).
 - Fiches descriptives des 4 segments : Caracterisation physique complete, indicateurs distinctifs en ecart relatif par rapport a l'atelier, limites d'interpretation et recommandations testables de maintenance.
 - Note de decision : Arbitrage justifie pour k = 4 comme compromis optimal entre stabilite statistique et actionnabilite terrain.
+
+### TP 5 : Reduction de dimension (ACP, t-SNE, UMAP)
+- Diagnostic de colinearite : Identification de 7 paires de signaux vibratoires fortement correlees (|r| > 0.90) justifiant la compression par ACP.
+- ACP et diagramme des eboulis : Conservation de 3 axes principaux pour atteindre le seuil de 90 % de variance cumulee (92.52 %), contre 1 axe selon Kaiser (valeur propre = 7.71).
+- Interpretation physique des axes : PC1 (85.6 %) traduisant l'effort et la sollicitation globale de coupe, oppose a la cadence ; PC2 (4.1 %) isolant la signature specifique haute frequence de l'usure de roulement.
+- Visualisation non lineaire t-SNE : Etude de la sensibilite a la perplexite (5, 30, 100), forte preservation locale (trustworthiness de 0.984), et demonstration de l'interdiction d'interpreter les distances inter-amas.
+- Pipeline ACP + K-means : Amelioration de la compacite des clusters en 3D ACP (silhouette de 0.458 vs 0.379 en 9D sans perte d'ARI) et mise en evidence de l'effondrement de l'ARI lors d'un clustering aveugle sur t-SNE.
+- Profilage metier en unites d'origine : Retour aux 9 capteurs physiques et regles d'or d'interpretation pour les equipes de maintenance.
