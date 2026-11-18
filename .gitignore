@@ -50,3 +50,7 @@ desktop.ini
 
 # Legacy / temporary empty directories
 TP1/
+
+# Fiches de revision locales (non rendues)
+FICHES_REVISION_EXAMEN.md
+
