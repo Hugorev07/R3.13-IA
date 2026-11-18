@@ -16,7 +16,8 @@ L'objectif global est de developper et valider une chaine complete d'analyse de 
 ├── notebooks/
 │   ├── TP1_preparation_telemetrie.ipynb # TP 1 : Preparation et exploration de la telemetrie
 │   ├── TP2_segmentation_kmeans.ipynb    # TP 2 : Segmentation non supervisee par K-means
-│   └── TP3_cah_dbscan.ipynb             # TP 3 : Familles de machines, CAH et DBSCAN
+│   ├── TP3_cah_dbscan.ipynb             # TP 3 : Familles de machines, CAH et DBSCAN
+│   └── TP4_evaluation_stabilite.ipynb   # TP 4 : Evaluation, profilage et stabilite des clusters
 ├── src/
 │   ├── __init__.py
 │   └── data_loader.py                # Fonctions utilitaires reutilisables (chargement des donnees)
@@ -67,7 +68,7 @@ python generateur_atelier.py
 | **TP 1** | **Preparation et exploration de la telemetrie capteurs** | **Termine** | `notebooks/TP1_preparation_telemetrie.ipynb` |
 | **TP 2** | **Segmentation non supervisee des regimes de fonctionnement (K-means)** | **Termine** | `notebooks/TP2_segmentation_kmeans.ipynb` |
 | **TP 3** | **Familles de machines et partitionnement avance (CAH & DBSCAN)** | **Termine** | `notebooks/TP3_cah_dbscan.ipynb` |
-| **TP 4** | Modelisation supervisee du risque de panne et classification predictive | A venir | `notebooks/TP4_classification_defauts.ipynb` |
+| **TP 4** | **Evaluation, profilage et stabilite des clusters** | **Termine** | `notebooks/TP4_evaluation_stabilite.ipynb` |
 | **TP 5** | Estimation de la duree de vie residuelle (RUL - Remaining Useful Life) | A venir | `notebooks/TP5_estimation_rul.ipynb` |
 | **TP 6** | Fusion de donnees : croisement telemetrie et tickets d'intervention GMAO | A venir | `notebooks/TP6_fusion_gmao.ipynb` |
 | **TP 7** | Deploiement d'un tableau de bord de maintenance predictive | A venir | `notebooks/TP7_dashboard_monitoring.ipynb` |
@@ -101,3 +102,11 @@ python generateur_atelier.py
 - Analyse metier du bruit DBSCAN : Preuve de la concentration majeure des anomalies dans le bruit (taux de defauts de 42.0 % dans le bruit vs 7.9 % hors bruit, sur-representation de M-06 et des incidents roulement).
 - Benchmark sur formes synthetiques : Mise a l'epreuve des 4 methodes (K-means, CAH Ward, CAH Single, DBSCAN) sur geometries complexes non convexes (blobs, lunes, cercles concentriques).
 - Recommandations operationnelles : Synthese concise a destination des equipes de maintenance integrant les roles complementaires de la CAH et de DBSCAN.
+
+### TP 4 : Evaluation, profilage et stabilite des clusters
+- Metriques internes (k = 2 a 8) : Confrontation de la Silhouette, de Davies-Bouldin et de Calinski-Harabasz preferant unanimement k = 2.
+- Metriques externes vs reference expert : Pic d'ARI (0.275) et d'AMI (0.385) a k = 4, et analyse du biais de sur-decoupage de la purete qui augmente artificiellement avec k.
+- Tests de stabilite : Evaluation de la sensibilite aux graines initiales (n_init = 1 vs 20) et robustesse au re-echantillonnage a 80 % (ARI moyen de 0.995 pour k = 4).
+- Stabilite temporelle : Decoupage chronologique 50/50 revelant une derive thermique lente et la concentration des pannes en deuxieme moitie de journee (ARI = 0.784).
+- Fiches descriptives des 4 segments : Caracterisation physique complete, indicateurs distinctifs en ecart relatif par rapport a l'atelier, limites d'interpretation et recommandations testables de maintenance.
+- Note de decision : Arbitrage justifie pour k = 4 comme compromis optimal entre stabilite statistique et actionnabilite terrain.
